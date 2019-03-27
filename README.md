@@ -1,0 +1,2 @@
+# newsScraper
+newsScraper Application
