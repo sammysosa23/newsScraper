@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <h2 class="center-align">Mongo Scraper</h2>
+      <h4 class="center-align">Aljazeera News</h4>
+
+    </div>
+  </div>
+  {{#each Articles}}
+
+  <div class="col s12 m6">
+    <div class="card blue-grey darken-1">
+      <div class="card-content white-text">
+        <span class="card-title">{{title}}</span>
+        <p>{{summary}}</p>
+      </div>
+      <div class="card-action">
+        <a href="{{link}}">Read More</a>
+        <a class="comments" data-id="{{_id}}">Comments</a>
+      </div>
+    </div>
+  </div>
+
+  {{/each}}
+  <button class="waves-effect waves-light btn-large" id="scrape">New Articles</button>
+</div>
