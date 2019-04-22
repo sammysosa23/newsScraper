@@ -1,0 +1,48 @@
+body {
+  background-size: 600px;
+  background-size: 100vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+.articleContainer {
+  height: 100%;
+}
+.articleBody {
+  height: 200px;
+  font-size: 14px;
+  overflow-y: scroll;
+  line-height: 150%;
+  position: relative;
+  min-height: 100vh;
+  width: 10em;
+}
+.input-field input[type="text"]:focus+label {
+  color: #635f60;
+}
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #635f60;
+  box-shadow: 0 1px 0 0 #000;
+}
+.input-field .prefix.active {
+  color: #635f60;
+}
+.footerContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+#btnSignUp {
+  background-color: #635f60;
+}
+#nameComment {
+  border-bottom: 2px solid #ec407a;
+  font-weight: bold;
+  background: #635f60;
+  color: white;
+}

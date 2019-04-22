@@ -1,21 +1,19 @@
-var mongoose = require('mongoose');
+// REQUIRE MONGOOSE
+var mongoose = require("mongoose");
 
-// SAVE A REFERENCE TO THE SCHEMA CONSTRUCTOR
+// REFERENCE TO SCHEMA CONSTRUCTOR
 var Schema = mongoose.Schema;
-
-// USING THE SCHEMA CONSTRUCTOR CREATE A NEW COMMENT SCHEMA OBJECT
-// SIMILAR TO THE SEQUALIZE MODEL
+// CREATE COMMENT SCHEMA
 var CommentSchema = new Schema({
-  user: {
-    type: String,
-    required: true
+  name: {
+    type: String
   },
-  comments: {
+  body: {
     type: String,
     required: true
   }
 });
-
+// CREATE THE COMMENT WITH THE COMMENT SCHEMA
 var Comment = mongoose.model("Comment", CommentSchema);
-
+// EXPORT THE MODEL
 module.exports = Comment;
